@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;1,900&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Poppins:ital,wght@0,300;0,400;1,300&family=Work+Sans:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background: white;
+}
+.main-header{
+    background: url(photo/Hero\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+}
+.logo{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.logo h2{
+    color: #ECECEC;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin: 0 4px;
+}
+nav a:hover{
+    background: linear-gradient(20deg,rgb(255, 0, 242),rgb(98, 0, 255)),linear-gradient(-20deg,rgb(255, 0, 242),rgb(98, 0, 255));
+    transition: all 0.3s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+nav button{
+    padding: 10px 20px;
+    margin: 0 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #FFD2DD;
+    color: #5E4DCD;
+    border: 0;
+    border-radius: 1px;
+}
+nav button:hover{
+    background: #5E4DCD;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Meaningful{
+    color: white;
+    text-align: center;
+    margin-top: 11%;
+}
+.Meaningful h1{
+    margin-bottom: 35px;
+    font-size: 45px;
+    line-height: 60px;
+    z-index: 10;
+}
+.Meaningful p{
+    margin-bottom: 23px;
+    line-height: 25px;
+    font-size: 17px;
+}
+.Meaningful button{
+    padding: 16px 60px;
+    text-transform: uppercase;
+    background: #FFD2DD;
+    border: 0;
+    color: #5E4DCD;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 1px;
+}
+.Meaningful button:hover{
+    background: #5E4DCD;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Offerings{
+    padding: 20px;
+    display: grid;
+    gap: 2rem;
+    
+}
+.main-card{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url(photo/Shape.png) no-repeat;
+
+}
+.small-mg{
+    position: relative;
+    z-index: 1;
+}
+.small-mg img{
+    max-width: 300px;
+}
+.Card{
+    overflow: hidden;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 60px rgba(51, 51, 51, 0.16);
+}
+.open-investment{
+    text-align: center;
+    line-height: 30px;
+}
+.open-investment h1{
+    margin-bottom: 30px;
+}
+.open-investment p{
+    color: grey;
+}
+.Card:before{
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: -30%;
+    top: -30%;
+    background: linear-gradient(#00e5ff,#8a0bbc,grey);
+    animation: animate 4s linear infinite;
+}
+.Card::after{
+    content: '';
+    inset: 2px;
+    position: absolute;
+    background-color: #FFFFFF;
+
+
+
+
+
+}
+.Oxalis{
+    padding: 20px;
+    display: grid;
+    gap: 1rem;
+
+}
+.Oxalis .Brooklyn {
+    z-index: 1;
+}
+.Oxalis p{
+    z-index: 1;
+}
+.Oxalis .outline{
+    max-width: 100%;
+    height: 8px;
+    background: #ECECEC;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    position: relative;
+    z-index: 1;
+}
+.outline .Bar{
+    background: #5E4DCD;
+    position: absolute;
+    height: 8px;
+    width: 160px;
+    top: 0;
+    left: 0;
+}
+.Oxalis p{
+    line-height: 27px;
+    font-size: 13px;
+}
+.Oxalis p span{
+    color: #5E4DCD;
+    font-weight: bold;
+}
+.Brooklyn p{
+    color: grey;
+}
+.Type{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1;
+}
+.Type span{
+    font-size: 12px;
+    z-index: 1;
+}
+.Type p{
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+}
+.view{
+    padding: 25px;
+    background: #FFD2DD;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5E4DCD;
+    z-index: 1;
+}
+.view p{
+    z-index: 1;
+}
+.view :hover{
+    background: #5E4DCD;
+    color: #FFFFFF;
+    transition: all 0.6s ease;
+    
+}
+.Projects{
+    padding: 50px;
+}
+.Projects button{
+    padding: 20px 35px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: 1px solid #5E4DCD;
+    background: #FFFFFF;
+    border-radius: 1px;
+    color: #5E4DCD;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Projects button:hover{
+    color: #FFFFFF;
+    background: #5E4DCD;
+    transition: all 0.5s ease;
+}
+.Investor{
+    display: flex;
+    justify-content: space-around;
+    background: url(photo/Graph.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Chart img{
+    max-width: 300px;
+}
+.Paid{
+    display: grid;
+    gap: 2rem;
+}
+.Paid p{
+    color: white;
+    line-height: 30px;
+}
+.CTA{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(photo/CTA.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+.Looking h1{
+     margin-bottom: 30px;
+     line-height: 40px;
+}
+.Looking p{
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: grey;
+}
+.Looking button{
+    padding:10px 20px;
+    background: #FFD2DD;
+    color: #5E4DCD;
+    border: 0;
+    border-radius: 1px;
+    text-transform: uppercase;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.Looking button:hover{
+    background: #5E4DCD;
+    color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+.Investing img{
+    max-width: 350px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Copyright h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.Service h4{
+    margin-bottom: 10px;
+}
+.Service a{
+    text-decoration: none;
+    line-height: 30px;
+    color: #000;
+}
+.footer img{
+    width: 50px;
+    height: 50px;
+}
+.Submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsletter .input{
+    display: flex;
+}
+.input input{
+    width: 250px;
+    border: 0;
+    outline: none;
+}
+.link a {
+    margin: 0 30px;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 900px) {
+    nav a{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        padding: 10px;
+    }
+    nav button{
+        max-width: 100%;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin: auto;
+    }
+    .Meaningful h1{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .open-investment h1{
+        font-size: 25px;
+    }
+    .Paid h1{
+        font-size: 25px;
+    }
+    .CTA{
+    }
+    .Looking h1{
+        font-size: 25px;
+    }
+    .footer{
+        padding-top: 100px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .Submit{
+        
+    }
+}
